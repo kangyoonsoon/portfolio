@@ -1,0 +1,36 @@
+.graph {
+  height: 20px;
+  /* background: #ccc; */
+  border-radius: 40px;
+  /* margin: 0 0 30px; */
+}
+.graph .bar {
+  display: inline-block;
+  /* width: 75%; */
+  height: 20px;
+  line-height: 20px;
+  text-align: right;
+  background: pink;
+  border-radius: 40px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  color: #fff;
+}
+.graph.stack1 .bar {
+  background: rgb(12, 17, 68);
+  animation: stack1 10s 1;
+}
+
+@keyframes stack1 {
+  0% {
+    width: 0;
+    color: rgba(255, 255, 255, 0);
+  }
+  40% {
+    color: rgba(255, 255, 255, 1);
+  }
+  100% {
+    width: 75%;
+    opacity: 1;
+  }
+}
