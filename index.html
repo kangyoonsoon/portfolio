@@ -8,7 +8,7 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
-    <link href="css/jquery.fullPage.css" rel="stylesheet" />
+    <!-- <link href="css/jquery.fullPage.css" rel="stylesheet" /> -->
     <!-- https://github.com/alvarotrigo/fullPage.js -->
   </head>
   <body>
@@ -25,7 +25,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a href="#1stSection" class="navbar-brand" id="logo"
+        <a href="/portfolio/#1stSection" class="navbar-brand" id="logo"
           ><img src="images/s_logo_transparent_40.png" alt="logo"
         /></a>
       </div>
@@ -36,10 +36,10 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav" id="topMenu">
-          <li><a href="#2ndSection">about</a></li>
-          <li><a href="#3rdSection">skills</a></li>
-          <li><a href="#4thSection">work</a></li>
-          <li><a href="#5thSection">contact</a></li>
+          <li><a href="/portfolio/#2ndSection">about</a></li>
+          <li><a href="/portfolio/#3rdSection">skills</a></li>
+          <li><a href="/portfolio/#4thSection">work</a></li>
+          <li><a href="/portfolio/#5thSection">contact</a></li>
         </ul>
       </div>
     </nav>
@@ -50,38 +50,43 @@
       <div class="container section" id="section1" data-anchor="1stSection">
         <!-- <img src="../images/bg1.jpg" alt=""> -->
         <div class="headline-wrapper">
-          <div class="headline">
-            <h2>YoonSoon Kang</h2>
-            <h2>Make things better in the web</h2>
-          </div>
-          <div class="headline-intro">
-            <p>
-              Hello, I am junior web developer. Currently, I am focused on
-              building web app with Spring framework.
-            </p>
+          <div class="headline-content">
+            <div class="headline">
+              <h2>YoonSoon Kang</h2>
+              <h2>Make things better in the web</h2>
+            </div>
+            <div class="headline-intro">
+              <p>
+                Hello, I am junior web developer. Currently, I am focused on
+                building web app with Spring framework.
+              </p>
+            </div>
           </div>
         </div>
       </div>
       <!-- section 2: about -->
       <div class="container section" id="section2" data-anchor="2ndSection">
-        <div class="title">
-          <h1>About Me</h1>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-sm-6">
-            <p class="about-me-description">
-              Hello, my name is YoonSoon Kang and I enjoy developing applicatoin
-              for the web. My interest in web development started in 2019, so I
-              decided to partcipated in Lighthouse Labs coding bootcamp in
-              Canada. I've learned not only popular frameworks like React and
-              Ruby on Rails, but also acquired how to think like programmer by
-              building an web app from the ground up. During the pandemic, I've
-              learned about new approach for buiding a web app with JAVA Spring
-              MVC at Joonang institute in South Korea.
-            </p>
+        <div class="about-wrapper">
+          <div class="title">
+            <h1>About Me</h1>
           </div>
-          <div class="col-md-6 col-sm-6">
-            <img src="img/me_hexagon.jpg" class="my-pic" />
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <p class="about-me-description">
+                Hello, my name is YoonSoon Kang and I enjoy developing
+                applicatoin for the web. My interest in web development started
+                in 2019, so I decided to partcipated in Lighthouse Labs coding
+                bootcamp in Canada. I've learned not only popular frameworks
+                like React and Ruby on Rails, but also acquired how to think
+                like programmer by building an web app from the ground up.
+                During the pandemic, I've learned about new approach for buiding
+                a web app with JAVA Spring MVC at Joonang institute in South
+                Korea.
+              </p>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <img src="img/me_hexagon.jpg" class="my-pic" />
+            </div>
           </div>
         </div>
       </div>
@@ -90,76 +95,77 @@
         <div class="title">
           <h1>Skills</h1>
         </div>
-
         <div class="skills-wrapper">
-          <table class="table">
-            <tbody id="Something">
-              <tr>
-                <th scope="row">HTML/CSS</th>
-                <td>
-                  <div id="graph" class="graph">
-                    <span class="bar" style="width: 75%">75%</span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">JavaScript</th>
-                <td>
-                  <div id="graph" class="graph">
-                    <span class="bar" style="width: 70%">70%</span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">JAVA</th>
-                <td>
-                  <div id="graph" class="graph">
-                    <span class="bar" style="width: 80%">80%</span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">BootStrap</th>
-                <td>
-                  <div id="graph" class="graph">
-                    <span class="bar" style="width: 60%">60%</span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">JQuery</th>
-                <td>
-                  <div id="graph" class="graph">
-                    <span class="bar" style="width: 60%">60%</span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">Spring</th>
-                <td>
-                  <div id="graph" class="graph">
-                    <span class="bar" style="width: 75%">75%</span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">React</th>
-                <td>
-                  <div id="graph" class="graph">
-                    <span class="bar" style="width: 70%">70%</span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">Oracle SQL</th>
-                <td>
-                  <div id="graph" class="graph">
-                    <span class="bar" style="width: 70%">70%</span>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="skills-table">
+            <table class="table">
+              <tbody id="Something">
+                <tr>
+                  <th scope="row">HTML/CSS</th>
+                  <td>
+                    <div id="graph" class="graph">
+                      <span class="bar" style="width: 75%">75%</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">JavaScript</th>
+                  <td>
+                    <div id="graph" class="graph">
+                      <span class="bar" style="width: 70%">70%</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">JAVA</th>
+                  <td>
+                    <div id="graph" class="graph">
+                      <span class="bar" style="width: 80%">80%</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">BootStrap</th>
+                  <td>
+                    <div id="graph" class="graph">
+                      <span class="bar" style="width: 60%">60%</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">JQuery</th>
+                  <td>
+                    <div id="graph" class="graph">
+                      <span class="bar" style="width: 60%">60%</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Spring</th>
+                  <td>
+                    <div id="graph" class="graph">
+                      <span class="bar" style="width: 75%">75%</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">React</th>
+                  <td>
+                    <div id="graph" class="graph">
+                      <span class="bar" style="width: 70%">70%</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Oracle SQL</th>
+                  <td>
+                    <div id="graph" class="graph">
+                      <span class="bar" style="width: 70%">70%</span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
       <!-- section 4: works -->
@@ -261,15 +267,17 @@
 
       <!-- section 5: contact -->
       <div class="container section" id="section5" data-anchor="5thSection">
-        <div class="contact">
-          <a href="mailto:kangyoonsoon@gmail.com" target="_brank">Contact</a>
+        <div class="contact-wrapper">
+          <div class="contact">
+            <a href="mailto:kangyoonsoon@gmail.com" target="_brank">Contact</a>
+          </div>
+          <p>Please email me whenever you have a question</p>
         </div>
-        <p>Please email me whenever you have a question</p>
       </div>
     </div>
     <script src="js/jquery-2.2.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.fullPage.js"></script>
+    <!-- <script src="js/jquery.fullPage.js"></script> -->
     <script>
       $(document).ready(function () {
         $("#fullpage").fullpage();
