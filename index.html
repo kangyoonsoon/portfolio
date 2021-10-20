@@ -8,7 +8,6 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
-    <!-- <link href="css/bar_graph.css" rel="stylesheet" /> -->
     <link href="css/jquery.fullPage.css" rel="stylesheet" />
     <!-- https://github.com/alvarotrigo/fullPage.js -->
   </head>
@@ -16,15 +15,31 @@
     <!-- nav -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="navbar-header">
+        <button
+          type="button"
+          class="navbar-toggle"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+        >
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#1stSection" class="navbar-brand" id="logo"
+          ><img src="images/s_logo_transparent_40.png" alt="logo"
+        /></a>
+      </div>
+      <div class="navbar-header">
         <a href="#" class="navbar-brand">
           <!-- <img class="logo" src="img/me_hexagon.jpg" alt="logo" /> -->
         </a>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav" id="topMenu">
-          <li><a href="#1">about</a></li>
-          <li><a href="#2">work</a></li>
-          <li><a href="#3">contact</a></li>
+          <li><a href="#2ndSection">about</a></li>
+          <li><a href="#3rdSection">skills</a></li>
+          <li><a href="#4thSection">work</a></li>
+          <li><a href="#5thSection">contact</a></li>
         </ul>
       </div>
     </nav>
@@ -32,7 +47,7 @@
     <!-- full page -->
     <div id="fullpage">
       <!-- section 1: home -->
-      <div class="container section" id="section1">
+      <div class="container section" id="section1" data-anchor="1stSection">
         <!-- <img src="../images/bg1.jpg" alt=""> -->
         <div class="headline-wrapper">
           <div class="headline">
@@ -48,7 +63,7 @@
         </div>
       </div>
       <!-- section 2: about -->
-      <div class="container section" id="section2">
+      <div class="container section" id="section2" data-anchor="2ndSection">
         <div class="title">
           <h1>About Me</h1>
         </div>
@@ -71,7 +86,7 @@
         </div>
       </div>
       <!-- section 3: skills -->
-      <div class="container section" id="section3">
+      <div class="container section" id="section3" data-anchor="3rdSection">
         <div class="title">
           <h1>Skills</h1>
         </div>
@@ -148,7 +163,7 @@
         </div>
       </div>
       <!-- section 4: works -->
-      <div class="container section" id="section4">
+      <div class="container section" id="section4" data-anchor="4thSection">
         <div class="title">
           <h1>Works</h1>
         </div>
@@ -245,7 +260,7 @@
       </div>
 
       <!-- section 5: contact -->
-      <div class="container section" id="section5">
+      <div class="container section" id="section5" data-anchor="5thSection">
         <div class="contact">
           <a href="mailto:kangyoonsoon@gmail.com" target="_brank">Contact</a>
         </div>
