@@ -5,17 +5,38 @@
 }
 
 /* section 1 */
+
+#section1 {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url("../images/dark.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
 .headline-wrapper {
+  /* position: relative; */
   padding-top: 30px;
   padding-bottom: 20px;
   margin-left: 25%;
+  color: rgb(245, 189, 6);
 }
 
+.headline-wrapper .headline {
+}
 /* section 2 */
+
+#section2 {
+  background: rgb(248, 249, 250);
+  background-size: cover;
+}
+
 .my-pic {
-  float: right;
+  float: left;
   max-width: 50%;
   height: auto;
+  border: rgb(1, 6, 19) solid 3px;
 }
 
 .title {
@@ -25,13 +46,66 @@
 }
 
 .about-me-description {
-  padding-right: 25%;
+  padding-left: 25%;
+  padding-right: 15%;
 }
 
 /* section 3 */
+
+#section3 {
+  background: rgb(248, 249, 250);
+  background-size: cover;
+}
+
 .skills-wrapper {
   padding-top: 30px;
   padding-bottom: 20px;
   margin-left: 25%;
   margin-right: 15%;
+}
+
+/* graph */
+
+.graph {
+  height: 20px;
+  border-radius: 40px;
+}
+.graph .bar {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  text-align: right;
+  background: rgb(12, 17, 68);
+  border-radius: 40px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.table th {
+  width: 20%;
+}
+
+/* section 4 */
+#section4 .contact {
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#section4 .contact a {
+  /* border: 3px solid navy; */
+  text-decoration: none;
+}
+#section4 p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  margin-top: 30px;
 }

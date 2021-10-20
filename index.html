@@ -8,7 +8,7 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
-    <link href="css/bar_graph.css" rel="stylesheet" />
+    <!-- <link href="css/bar_graph.css" rel="stylesheet" /> -->
     <link href="css/jquery.fullPage.css" rel="stylesheet" />
     <!-- https://github.com/alvarotrigo/fullPage.js -->
   </head>
@@ -32,7 +32,8 @@
     <!-- full page -->
     <div id="fullpage">
       <!-- section 1: home -->
-      <div class="container section">
+      <div class="container section" id="section1">
+        <!-- <img src="../images/bg1.jpg" alt=""> -->
         <div class="headline-wrapper">
           <div class="headline">
             <h2>YoonSoon Kang</h2>
@@ -47,14 +48,11 @@
         </div>
       </div>
       <!-- section 2: about -->
-      <div class="container section">
+      <div class="container section" id="section2">
         <div class="title">
           <h1>About Me</h1>
         </div>
         <div class="row">
-          <div class="col-md-6 col-sm-6">
-            <img src="img/me_hexagon.jpg" class="my-pic" />
-          </div>
           <div class="col-md-6 col-sm-6">
             <p class="about-me-description">
               Hello, my name is YoonSoon Kang and I enjoy developing applicatoin
@@ -67,60 +65,94 @@
               MVC at Joonang institute in South Korea.
             </p>
           </div>
+          <div class="col-md-6 col-sm-6">
+            <img src="img/me_hexagon.jpg" class="my-pic" />
+          </div>
         </div>
       </div>
       <!-- section 3: skills -->
-      <div class="container section">
+      <div class="container section" id="section3">
         <div class="title">
           <h1>Skills</h1>
         </div>
 
         <div class="skills-wrapper">
           <table class="table">
-            <tbody>
+            <tbody id="Something">
               <tr>
                 <th scope="row">HTML/CSS</th>
                 <td>
-                  <div class="graph stack1">
+                  <div id="graph" class="graph">
                     <span class="bar" style="width: 75%">75%</span>
                   </div>
                 </td>
               </tr>
               <tr>
                 <th scope="row">JavaScript</th>
-                <td>*******************************</td>
+                <td>
+                  <div id="graph" class="graph">
+                    <span class="bar" style="width: 70%">70%</span>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <th scope="row">JAVA</th>
-                <td>******</td>
+                <td>
+                  <div id="graph" class="graph">
+                    <span class="bar" style="width: 80%">80%</span>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <th scope="row">BootStrap</th>
-                <td>**********************************************</td>
+                <td>
+                  <div id="graph" class="graph">
+                    <span class="bar" style="width: 60%">60%</span>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <th scope="row">JQuery</th>
-                <td>***************************</td>
+                <td>
+                  <div id="graph" class="graph">
+                    <span class="bar" style="width: 60%">60%</span>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <th scope="row">Spring</th>
-                <td>***************</td>
+                <td>
+                  <div id="graph" class="graph">
+                    <span class="bar" style="width: 75%">75%</span>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <th scope="row">React</th>
-                <td>*******************************</td>
+                <td>
+                  <div id="graph" class="graph">
+                    <span class="bar" style="width: 70%">70%</span>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <th scope="row">Oracle SQL</th>
-                <td>******</td>
+                <td>
+                  <div id="graph" class="graph">
+                    <span class="bar" style="width: 70%">70%</span>
+                  </div>
+                </td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
       <!-- section 4: contact -->
-      <div class="container section">
-        <a href="mailto:kangyoonsoon@gmail.com" target="_brank">Contact</a>
+      <div class="container section" id="section4">
+        <div class="contact">
+          <a href="mailto:kangyoonsoon@gmail.com" target="_brank">Contact</a>
+        </div>
+        <p>Please email me whenever you have a question</p>
       </div>
     </div>
     <script src="js/jquery-2.2.4.min.js"></script>
@@ -130,6 +162,27 @@
       $(document).ready(function () {
         $("#fullpage").fullpage();
       });
+
+      // trigger animation
+      // https://graphoverflow.com/questions/27462306/css3-animate-elements-if-visible-in-viewport-page-scroll
+      function callbackFunc(entries, observer) {
+        entries.forEach((entry) => {
+          var element = document.getElementById("graph");
+          element.classList.add("graph");
+          console.log("yes!!");
+          console.log(window.screen.height);
+          console.log(window.innerHeight);
+          console.log(document.documentElement.scrollHeight);
+        });
+      }
+      let options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1,
+      };
+
+      let observer = new IntersectionObserver(callbackFunc, options);
+      observer.observe(document.getElementById("Something"));
     </script>
   </body>
 </html>
