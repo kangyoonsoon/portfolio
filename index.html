@@ -26,7 +26,7 @@
           <span class="icon-bar"></span>
         </button>
         <a
-          href="https://kangyoonsoon.github.io/portfolio#1stSection"
+          href="https://kangyoonsoon.github.io/portfolio"
           class="navbar-brand"
           id="logo"
           ><img src="images/s_logo_transparent_40.png" alt="logo"
@@ -39,26 +39,10 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav" id="topMenu">
-          <li>
-            <a href="https://kangyoonsoon.github.io/portfolio#2ndSection"
-              >about</a
-            >
-          </li>
-          <li>
-            <a href="https://kangyoonsoon.github.io/portfolio#3rdSection"
-              >skills</a
-            >
-          </li>
-          <li>
-            <a href="https://kangyoonsoon.github.io/portfolio#4thSection"
-              >work</a
-            >
-          </li>
-          <li>
-            <a href="https://kangyoonsoon.github.io/portfolio#5thSection"
-              >contact</a
-            >
-          </li>
+          <li class="nav-item" id="nav-sec2"><a class="nav-link">about</a></li>
+          <li class="nav-item" id="nav-sec3"><a class="nav-link">skills</a></li>
+          <li class="nav-item" id="nav-sec4"><a class="nav-link">work</a></li>
+          <li class="nav-item" id="nav-sec5"><a class="nav-link">contact</a></li>
         </ul>
       </div>
     </nav>
@@ -298,30 +282,62 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- <script src="js/jquery.fullPage.js"></script> -->
     <script>
-      $(document).ready(function () {
-        $("#fullpage").fullpage();
+      $("#nav-sec2").click(function () {
+        $("html, body").animate(
+          {
+            scrollTop: $("#section2").offset().top,
+          },
+          800
+        );
       });
+      $("#nav-sec3").click(function () {
+        $("html, body").animate(
+          {
+            scrollTop: $("#section3").offset().top,
+          },
+          800
+        );
+      });
+      $("#nav-sec4").click(function () {
+        $("html, body").animate(
+          {
+            scrollTop: $("#section4").offset().top,
+          },
+          800
+        );
+      });
+      $("#nav-sec5").click(function () {
+        $("html, body").animate(
+          {
+            scrollTop: $("#section5").offset().top,
+          },
+          800
+        );
+      });
+      // $(document).ready(function () {
+      //   $("#fullpage").fullpage();
+      // });
 
       // trigger animation
       // https://graphoverflow.com/questions/27462306/css3-animate-elements-if-visible-in-viewport-page-scroll
-      function callbackFunc(entries, observer) {
-        entries.forEach((entry) => {
-          var element = document.getElementById("graph");
-          element.classList.add("graph");
-          console.log("yes!!");
-          console.log(window.screen.height);
-          console.log(window.innerHeight);
-          console.log(document.documentElement.scrollHeight);
-        });
-      }
-      let options = {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.1,
-      };
+      // function callbackFunc(entries, observer) {
+      //   entries.forEach((entry) => {
+      //     var element = document.getElementById("graph");
+      //     element.classList.add("graph");
+      //     console.log("yes!!");
+      //     console.log(window.screen.height);
+      //     console.log(window.innerHeight);
+      //     console.log(document.documentElement.scrollHeight);
+      //   });
+      // }
+      // let options = {
+      //   root: null,
+      //   rootMargin: "0px",
+      //   threshold: 0.1,
+      // };
 
-      let observer = new IntersectionObserver(callbackFunc, options);
-      observer.observe(document.getElementById("Something"));
+      // let observer = new IntersectionObserver(callbackFunc, options);
+      // observer.observe(document.getElementById("Something"));
     </script>
   </body>
 </html>
