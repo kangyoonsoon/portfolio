@@ -87,7 +87,13 @@
 }
 
 /* section 4 */
-#section4 .contact {
+
+.card-wrapper {
+  margin-left: 25%;
+}
+
+/* section 5 */
+#section5 .contact {
   /* text-align: center; */
   display: flex;
   justify-content: center;
@@ -98,11 +104,11 @@
   font-weight: bold;
 }
 
-#section4 .contact a {
+#section5 .contact a {
   /* border: 3px solid navy; */
   text-decoration: none;
 }
-#section4 p {
+#section5 p {
   display: flex;
   justify-content: center;
   align-items: center;
