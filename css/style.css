@@ -88,8 +88,23 @@
 
 /* section 4 */
 
+.card img {
+  border: rgb(15, 19, 78) solid 2px;
+}
 .card-wrapper {
-  margin-left: 25%;
+}
+.card-content {
+  margin-top: 10px;
+  
+}
+.links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-body button {
+  padding: 0px 30;
+  background: rgb(148, 209, 178);
 }
 
 /* section 5 */
